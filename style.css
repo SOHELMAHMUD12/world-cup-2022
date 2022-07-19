@@ -4,6 +4,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
 /* Common styles */
 *{
     margin: 0;
@@ -13,8 +14,7 @@ body{
 /* start container */
 .container{
     width: 1200px;
-    margin: 0 auto; 
-    
+    margin: 0 auto;   
 }
 /* start banner */
 .banner{
@@ -30,23 +30,25 @@ body{
 .banner-text h1{
     font-size: 40px;
     font-weight: 700;
-    color: white;
-    
+    color: white; 
 }
+
 .banner-text p{
     margin-bottom: 10px;
     font-size: 10px;
     color: whitesmoke;
     padding-bottom: 10px;   
 }
+
 .banner-img img{
     width: 581px;
-    height: 605px;
-    
+    height: 605px;  
 }
+
 .banner-text{
     padding-left:106px;   
 }
+
 .btn{
     background-color:red;
     padding: 10px 20px;
@@ -62,25 +64,78 @@ body{
     display: grid;
     grid-template-columns:1fr 3fr;
     grid-gap: 10px;
-    margin-bottom: 130px;
-   
+    margin-bottom: 130px; 
+}
+
+.match-link{
+    background-color:black;
+    width: 270px;
+    height: 250px;
+    border-radius: 5px;  
+}
+
+.match-link a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 190px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 12px 15px;
     
 }
-.match-link{
-    background-color: aqua;
+.match-link .blog-btn{
+    background-color: red;
+    color: white;
+    
 }
 .match1{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
-   
-    
-    
-    
+    grid-gap: 10px; 
+      
 }
+
 .match2{
     border: 1px solid #16161637;
     border-radius: 5px;
+    margin-left: 20px;
+    
+    
+}
+.match2 a{
+    border: 1px solid rgb(37, 35, 35);
+    text-decoration: none;
+    padding: 0 10px;
+    border-radius: 3px;
+    color: rgba(22, 22, 22, 1);
+    margin-left: 20px;
+
+
+}
+.match2 p{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.clock-icon{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.clock-icon span{
+    margin-right: 30px;
+}
+.timer-icon{
+    display: flex;
+    align-items: center;
+    
+}
+.timer-icon span{
+    margin-left: 20px;
 }
 /* end match items */
 
@@ -88,7 +143,7 @@ body{
 footer{
     width: 100%;
     height: 300px;
-    background-color: blueviolet;
+    background-color: rgb(18, 17, 18);
 }
 .footer-all{
     padding-top: 100px;
