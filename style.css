@@ -1,6 +1,74 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto+Slab&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /* Common styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* start container */
+.container{
+    width: 1240px;
+    margin: 0 auto;   
+}
+/* start banner */
+.banner{
+    background-color:black;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;   
+}
+.banner-text h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    
+}
+.banner-text p{
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: whitesmoke;
+    padding-bottom: 10px;   
+}
+.banner-text{
+    padding-left:106px;   
+}
+.btn{
+    background-color:red;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: whitesmoke;
+    text-decoration: none; 
+}
+/* end banner */
+
+/* start footer */
+footer{
+    width: 1400px;
+    height: 300px;
+    background-color: blueviolet;
+}
+.footer-all{
+    justify-content: center;
+    align-items: center;
+}
+.footer-text h1{
+    justify-content: center;
+    text-align: center;
+}
+.goals-menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.goals-menu li{
+    list-style: none;
+}
+
