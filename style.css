@@ -12,8 +12,9 @@ body{
 }
 /* start container */
 .container{
-    width: 1240px;
-    margin: 0 auto;   
+    width: 1200px;
+    margin: 0 auto; 
+    
 }
 /* start banner */
 .banner{
@@ -22,7 +23,9 @@ body{
     margin-top: 50px;
     display: flex;
     justify-content:space-between;
-    align-items: center;   
+    align-items: center;
+    height: 600px;
+    margin-bottom: 130px;
 }
 .banner-text h1{
     font-size: 40px;
@@ -36,6 +39,11 @@ body{
     color: whitesmoke;
     padding-bottom: 10px;   
 }
+.banner-img img{
+    width: 581px;
+    height: 605px;
+    
+}
 .banner-text{
     padding-left:106px;   
 }
@@ -48,27 +56,58 @@ body{
 }
 /* end banner */
 
+/* start match items */
+
+.match{
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-gap: 10px;
+    margin-bottom: 130px;
+   
+    
+}
+.match-link{
+    background-color: aqua;
+}
+.match1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+   
+    
+    
+    
+}
+.match2{
+    border: 1px solid #16161637;
+    border-radius: 5px;
+}
+/* end match items */
+
 /* start footer */
 footer{
-    width: 1400px;
+    width: 100%;
     height: 300px;
     background-color: blueviolet;
 }
 .footer-all{
-    justify-content: center;
-    align-items: center;
+    padding-top: 100px;
 }
 .footer-text h1{
     justify-content: center;
     text-align: center;
+    color: whitesmoke;
 }
 .goals-menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
+    color: white;
 }
 .goals-menu li{
     list-style: none;
+   
 }
+/* end footer  */
 
