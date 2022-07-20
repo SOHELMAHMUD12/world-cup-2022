@@ -169,6 +169,7 @@ body {
 footer {
     width: 100%;
     height: 300px;
+    background-color: rgb(18, 17, 18);
 }
 
 .footer-all {
@@ -210,7 +211,7 @@ footer {
 /* -------------------------------- */
         /* mobile devices */
 /* -------------------------------- */
-@media only screen and (max-width:688px){
+@media screen and (max-width:688px){
     .banner{
         display: flex;
         flex-direction: column;
@@ -241,7 +242,25 @@ footer {
 /* -------------------------------- */
         /* tablet devices */
 /* -------------------------------- */
-@media screen and (min-width:577px)and (max-width:992px) {
+@media  screen and (min-width:577px)and (max-width:992px) {
      
-    
+    .match1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .match{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .match-link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: transparent;
+    }
+    .match-link a{
+        border: 1px solid gray;
+    }
 }
