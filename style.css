@@ -177,9 +177,10 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    color: rgba(36, 243, 243, 0.792);
-    
-
+}
+.footer-icon .faa{
+    color:white;
+    margin: 0 10px;
 }
 .goals-menu ul {
     display: flex;
