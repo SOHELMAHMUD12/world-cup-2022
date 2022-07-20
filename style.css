@@ -1,112 +1,122 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto+Slab&display=swap');
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* Common styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* start container */
-.container{
+.container {
     width: 1200px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
+
 /* start banner */
-.banner{
-    background-color:black;
+.banner {
+    background-color: black;
     border-radius: 10px;
     margin-top: 50px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     height: 600px;
     margin-bottom: 130px;
 }
-.banner-text h1{
+
+.banner-text h1 {
     font-size: 40px;
     font-weight: 700;
-    color: white; 
+    color: white;
 }
 
-.banner-text p{
+.banner-text p {
     margin-bottom: 10px;
     font-size: 10px;
     color: whitesmoke;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;
 }
 
-.banner-img img{
+.banner-img img {
     width: 581px;
-    height: 605px;  
+    height: 605px;
 }
 
-.banner-text{
-    padding-left:106px;   
+.banner-text {
+    padding-left: 106px;
 }
 
-.btn{
-    background-color:red;
+.btn {
+    background-color: red;
     padding: 10px 20px;
     font-weight: 700;
     color: whitesmoke;
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 /* end banner */
 
 /* start match items */
 
-.match{
+.match {
     display: grid;
-    grid-template-columns:1fr 3fr;
-    grid-gap: 10px;
-    margin-bottom: 130px; 
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 15px;
+    margin-bottom: 130px;
+  
 }
 
-.match-link{
-    background-color:black;
+.match-link {
+    background-color: black;
     width: 270px;
     height: 250px;
-    border-radius: 5px;  
+    border-radius: 5px;
 }
 
-.match-link a{
+.match-link a {
     display: block;
     text-decoration: none;
     color: black;
     width: 190px;
     margin: 0 auto;
     text-align: center;
-    background-color:white;
+    background-color: white;
     border-radius: 5px;
     margin-top: 25px;
     padding: 12px 15px;
-    
-}
-.match-link .blog-btn{
-    background-color: red;
-    color: white;
-    
-}
-.match1{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px; 
-      
+
 }
 
-.match2{
+.match-link .blog-btn {
+    background-color: red;
+    color: white;
+
+}
+
+.match1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+
+}
+
+.match2 {
     border: 1px solid #16161637;
     border-radius: 5px;
     margin-left: 20px;
-    
+}
+.match2-pic{
+    width: 100%;
     
 }
-.match2 a{
+
+.match2 a {
     border: 1px solid rgb(37, 35, 35);
     text-decoration: none;
     padding: 0 10px;
@@ -116,53 +126,86 @@ body{
 
 
 }
-.match2 p{
+
+.match2 p {
     margin-left: 20px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.clock-icon{
+
+.clock-icon {
     display: flex;
     align-items: center;
     margin-left: 20px;
 }
-.clock-icon span{
+
+.clock-icon span {
     margin-right: 30px;
 }
-.timer-icon{
+
+.timer-icon {
     display: flex;
     align-items: center;
-    
+
 }
-.timer-icon span{
+
+.timer-icon span {
     margin-left: 20px;
 }
+
 /* end match items */
 
 /* start footer */
-footer{
+footer {
     width: 100%;
     height: 300px;
     background-color: rgb(18, 17, 18);
 }
-.footer-all{
+
+.footer-all {
     padding-top: 100px;
 }
-.footer-text h1{
+
+.footer-text h1 {
     justify-content: center;
     text-align: center;
     color: whitesmoke;
 }
-.goals-menu ul{
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: rgba(36, 243, 243, 0.792);
+    
+
+}
+.goals-menu ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
     color: white;
 }
-.goals-menu li{
+
+.goals-menu li {
     list-style: none;
-   
+
 }
+
 /* end footer  */
 
+/* mobile devices */
+@media screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .match{
+        background-color: aqua;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .match{
+        flex-direction: column;
+    }
+}
