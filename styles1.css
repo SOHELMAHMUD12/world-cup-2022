@@ -11,12 +11,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 /* start container */
 .container {
     width: 1200px;
     margin: 0 auto;
 }
+/* end container */
 
 /* start banner */
 .banner {
@@ -59,22 +59,26 @@ body {
     color: whitesmoke;
     text-decoration: none;
 }
+/* -------------------------------- */
+        /* end banner */
+/* -------------------------------- */
 
-/* end banner */
-/* start match items */
-
+/* -------------------------------- */
+        /* start match items */
+/* -------------------------------- */
 .match {
     display: grid;
     grid-template-columns:  1fr 3fr;
     grid-gap: 10px;
-    margin-bottom: 130px;
+    margin-bottom: 130px; 
 }
 
 .match-link {
     background-color: black;
     width: 270px;
-    height: 250px;
+    height: 270px;
     border-radius: 5px;
+    padding-bottom: 35px;
 }
 
 .match-link a {
@@ -88,19 +92,17 @@ body {
     border-radius: 5px;
     margin-top: 25px;
     padding: 12px 15px;
-
 }
 
 .match-link .match-btn {
     background-color: red;
     color: white;
-
 }
 
 .match1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:15px;
+    grid-gap:10px;
 }
 
  .match1 h4{
@@ -109,109 +111,101 @@ body {
     align-items: center;
     padding: 0 20px;
 } 
+
  .match1 h3 {
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 } 
+
 .match1 p{
     margin-left: 20px;
 }
 
-.flag-img {
-     display: flex;  
-} 
-/* -------------------------------- */
-
-
-/* .match {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 15px;
-    margin-bottom: 130px;
-
-}
-
-.match-link {
-    background-color: black;
-    width: 270px;
-    height: 250px;
+.flag-text{
+    width: 302px;
+    height: 200px;
     border-radius: 5px;
-}
-
-.match-link a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    width: 190px;
-    margin: 0 auto;
+    border: 1px solid #E8E8E8;
+    padding-top: 50px;
+    justify-content: center;
     text-align: center;
-    background-color: white;
-    border-radius: 5px;
-    margin-top: 25px;
-    padding: 12px 15px;
-
 }
 
-.match-link .blog-btn {
-    background-color: red;
-    color: white;
-
+.flag-text img{
+    justify-content: center;
+    margin-left: 15px;
 }
 
-.match1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+.flag-img {
+     display: flex;     
+} 
 
+.img-pic{
+    margin-bottom: 150px;
 }
+/* -------------------------------- */
+        /* end match items */
+ /* -------------------------------- */
 
-.match2 {
-    border: 1px solid #16161637;
-    border-radius: 5px;
-    margin-left: 20px;
-}
-
-.match2-pic {
+ /* -------------------------------- */
+            /* start footer */
+  /* -------------------------------- */
+footer {
     width: 100%;
-
+    height: 300px;
+    background-color: rgb(18, 17, 18);
 }
 
-.match2 a {
-    border: 1px solid rgb(37, 35, 35);
-    text-decoration: none;
-    padding: 0 10px;
-    border-radius: 3px;
-    color: rgba(22, 22, 22, 1);
-    margin-left: 20px;
-
-
+.footer-all {
+    padding-top: 100px;
 }
 
-.match2 p {
-    margin-left: 20px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+.footer-text h1 {
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
 }
 
-.clock-icon {
+.footer-icon{
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-top: 20px;
 }
-
-.clock-icon span {
-    margin-right: 30px;
+.footer-icon .faa{
+    color:white;
+    margin: 0 10px;
 }
-
-.timer-icon {
+.goals-menu ul {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-
+    margin-top: 30px;
+    color: white;
 }
 
-.timer-icon span {
-    margin-left: 20px;
-} */
+.goals-menu li {
+    list-style: none;
+
+}
+ /* -------------------------------- */
+            /* end footer  */
+/* -------------------------------- */
+   
+ /* mobile device */
+ @media screen and (max-width:576px){
+    .container{
+     grid-template-columns: repeat(1, 1fr);
+    }
+ }
+/* tablet device */
+ @media screen and (min-width:577px)and (max-width:992px) {
+     .container{
+         grid-template-columns: repeat(2, 1fr);
+     }
+    
+ }
+
+
 
 
 
