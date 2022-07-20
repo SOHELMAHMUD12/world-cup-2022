@@ -1,0 +1,161 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto+Slab&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start container */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* start banner */
+.banner {
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    margin-bottom: 130px;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.banner-text p {
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+.banner-img img {
+    width: 581px;
+    height: 605px;
+}
+
+.banner-text {
+    padding-left: 106px;
+}
+
+.btn {
+    background-color: red;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* end banner */
+/* start match items */
+
+.match {
+    display: grid;
+    grid-template-columns:  1fr 3fr;
+    grid-gap: 10px;
+    margin-bottom: 130px;
+}
+
+.match-link {
+    background-color: black;
+    width: 270px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.match-link a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 190px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 12px 15px;
+
+}
+
+.match-link .match-btn {
+    background-color: red;
+    color: white;
+
+}
+
+.match1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+
+}
+.match1 h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.match1 h3 {
+    margin-left: 20px;
+    
+}
+.match1 p{
+    margin-left: 20px;
+}
+
+.flag-img {
+    display: flex;  
+}
+
+
+/* start footer */
+footer {
+    width: 100%;
+    height: 300px;
+    background-color:rgba(22, 22, 22, 1)
+}
+.footer-all {
+    padding-top: 100px;
+}
+
+.footer-text h1 {
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.goals-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.goals-menu li {
+    list-style: none;
+
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+/* end footer  */
